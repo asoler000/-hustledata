@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300');
+
+/* ---- particles styles---- */
+
+.count-particles {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    color: #13E8E9;
+    font-size: .8em;
+    text-align: left;
+    text-indent: 4px;
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.js-count-particles {
+    font-size: 1.1em;
+}
+
+#stats,
+.count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+    background-image: url('');
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+/* ---- particles end---- */
+
+
+/* ---- animated text ---- */
+
+.bodygreeting {
+    text-align: center;
+    color: #49fb35;
+    font-family: 'Roboto';
+    font-weight: 300;
+    font-size: 32px;
+    padding-top: 10vh;
+    height: 100vh;
+    width: 100vm!important;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0, 0, 0);
+}
+
+.divgreeting {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.divgreeting:first-of-type {
+    /* For increasing performance 
+                     ID/Class should've been used. 
+                     For a small demo 
+                     it's okaish for now */
+    animation: showup 10s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+}
+
+.divgreeting:last-of-type {
+    width: 0px;
+    animation: reveal 10s;
+    animation-iteration-count: 1!important;
+}
+
+.animateOnce {
+    -webkit-animation: NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
+    -moz-animation: NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
+    -o-animation: NAME-OF-YOUR-ANIMATION 0.5s normal forwards;
+}
+
+@keyframes showup {
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: -800px;
+    }
+    20% {
+        margin-left: -800px;
+    }
+    35% {
+        margin-left: 0px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+@keyframes reveal {
+    0% {
+        opacity: 0;
+        width: 0px;
+    }
+    20% {
+        opacity: 1;
+        width: 0px;
+    }
+    30% {
+        width: 425px;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        width: 425px;
+    }
+}
+
+p {
+    font-size: 12px;
+    color: #999;
+    margin-top: 200px;
+    /* ---- animated text end ---- */
+}
+
+
+/* ---- ticker---- */
+
+@keyframes ticker {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        transform: translate3d(-100%, 0, 0);
+    }
+}
+
+.tcontainer {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-wrap {
+    width: 100%;
+    padding-left: 100%;
+    background-color: black;
+    color: #52FF33;
+    font-size: 1.5em;
+}
+
+.ticker-move {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 40s;
+}
+
+.ticker-move:hover {
+    animation-play-state: paused;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+.tickerbody {
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background-color: transparent!important;
+    height: 100%!important;
+}
+
+@media (max-width: 600px) {
+    .collapsible {
+        background-color: green;
+        color: white;
+        cursor: pointer;
+        padding: 18px;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+    .active,
+    .collapsible:hover {
+        background-color: gray;
+    }
+    .content {
+        padding: 0 18px;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-out;
+        background-color: #f1f1f1;
+    }
+}
+
+#stats,
+.count-particles {
+    display: none;
+}
+
+
+/* NEWS STYLING */
+
+#newsResults a {
+    color: #212529;
+}
+
+#newsResults a:hover {
+    color: #28a745;
+    text-decoration: none;
+}
+
+.Newscontainer {
+    position: relative;
+    padding: 8px 8px 32px 8px;
+    background: #dddccf;
+}
+
+
+/* NEWS container styling start */
+
+.Newscontainer:after {
+    background: linear-gradient(-45deg, #ffffff 16px, transparent 0), linear-gradient(45deg, #ffffff 16px, transparent 0);
+    background-position: left-bottom;
+    background-repeat: repeat-x;
+    background-size: 32px 32px;
+    content: " ";
+    display: block;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 32px;
+}
+
+.newsTitle {
+    font-size: 1rem!important;
+}
+
+
+/* NEWS container styling end */
+
+.searchStage {
+    margin-top: -95vh;
+    z-index: 10;
+}
+
+
+/* QUESTIONS styling START */
+
+.green {
+    background-color: #32d082;
+    color: white;
+}
+
+
+/* created class to respond to question */
+
+.red {
+    background-color: #dd7788;
+}
+
+
+/* targeted ROE question by ID */
+
+#roe {
+    text-align: center;
+    color: white;
+}
+
+
+/* targeted ratio question by ID */
+
+#liabilities {
+    text-align: center;
+    color: white;
+}
+
+
+/* created ID for sales increasing question by ID */
+
+#boxOne2020 {
+    text-align: center;
+    color: white;
+}
+
+
+/* created ID for sales doubling question by ID */
+
+#boxTwo2020 {
+    text-align: center;
+    color: white;
+}
+
+
+/* targeted dividend question by ID */
+
+#FiveYearEps2020 {
+    text-align: center;
+    color: white;
+}
+
+
+/* QUESTIONS styling END */
+
+.bucket {
+    width: 100%;
+}
+
+
+/* scroll bar start*/
+
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 41vh;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+
+.bucketResults::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    background-color: #d3d3d3;
+}
+
+.bucketResults::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.bucketResults::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #33ff00;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent)
+}
+
+
+/* scroll bar ends*/
+
+
+/* scrollCRYPTO bar start*/
+
+.Cryptobar {
+    margin-left: 30px;
+    float: left;
+    height: auto;
+    margin-bottom: 25px;
+}
+/* scrollCRYPTO bar ends*/
+
+
+/* News Image */
+
+.newsImg {
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.left {
+    margin-left: 100px!important;
+}
+
+.betterrow {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-left: 3vw!important;
+    
+}
+
+
+/* Font Style Usuage For COMPANY rESULT hEADER START*/
+
+@font-face {
+    font-family: 'Press Start 2P', cursive;
+}
+
+.companyheader {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5em;
+    color: whitesmoke;
+}
+
+
+/* Font Style Usuage For COMPANY rESULT hEADER END*/
+
+
+/* CRYPTO BUCKET BACKGROUND TEXTURE START*/
+
+.carbon {
+    background: radial-gradient(black 15%, transparent 16%) 0 0, radial-gradient(black 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+    background-color: #282828;
+    background-size: 16px 16px;
+}
+
+
+/* CRYPTO BUCKET BACKGROUND TEXTURE END*/
+
+
+/* CRYPTO BUCKET METALLIC/ TYPE TEXTURE START*/
+
+.cryptoType {
+    color: rgb(189, 185, 185);
+    text-shadow: 0px 1px 0px rgba(34, 33, 33, 0.5);
+    /* 50% white from bottom */
+}
+.name{
+font-size: large!important;
+width:100%!important;
+}
+
+.price{
+    font-size: 1rem;
+    width:100%!important;
+}
+.change{
+    font-size: 1rem;
+    width:100%!important;
+}
+.marketCap{
+    font-size: 1rem;
+    width:100%!important;
+}
+.greenType{
+    color:#39FF14!important;
+}
+
+/* CRYPTO BUCKET METALLIC/ TYPE TEXTURE END*/
+
+.resultsPaper {
+    background(linear-gradient(90deg,
+    snow 1px,
+    #f0f0f0 1px));
+    background-size(5px 5px);
+}
+
+.frostedglass {
+    background-color: rgba(255, 255, 255, .30);
+    backdrop-filter: blur(5px);
+}
+
+.tooltip-main {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    font-weight: 700;
+    background: #f3f3f3;
+    border: 1px solid #737373;
+    color: #737373;
+    margin: 4px 121px 0 5px;
+    float: right;
+    text-align: left !important;
+}
+
+.tooltip-qm {
+    float: left;
+    margin: -2px 0px 3px 4px;
+    font-size: 12px;
+}
+
+.tooltip-inner {
+    max-width: 236px !important;
+    height: 76px;
+    font-size: 12px;
+    padding: 10px 15px 10px 20px;
+    background: #FFFFFF;
+    color: rgb(0, 0, 0, .7);
+    border: 1px solid #737373;
+    text-align: left;
+}
+
+.tooltip.show {
+    opacity: 1;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+    border-bottom-color: #f00;
+    /* Red */
+}
+
+.whitetype {
+    color: white!important;
+}
+
+.name {
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .75rem;
+}
+
+.price {
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .75rem;
+}
+
+.change {
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .75rem;
+}
+
+.marketCap {
+    margin: 10px;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+    font-size: .75rem;
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>$HustleData</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <script>
+        jQuery(document).ready(function() {
+            jQuery('[data-toggle="tooltip"]').tooltip();
+        });
+    </script>
+</head>
+
+<body class="tickerbody">
+    <!-- MENU START -->
+    <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand p-4" href="#">
+            <img src="./assets/images/logo-1.svg" width="300vm" height="auto" alt="" loading="lazy">
+        </a>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="search-term">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="searchBtn" onclick="showDiv()">Search</button>
+        </form>
+    </nav>
+    <!-- MENU end -->
+
+    <div class="container vh-100">
+
+
+
+        <!-- particles.js container -->
+        <div id="particles-js">
+            <div class="bodygreeting" id="bodyGreeting">
+                <div class="divgreeting animateOnce">Hello Hustler!</div>
+                <div class="divgreeting animateOnce">
+                    Type a ticker name to search...
+                </div>
+            </div>
+        </div>
+        <!-- particles.js container -->
+
+        <div id="searchStage" style="display:none">
+            <!-- Card Results-->
+            <div class="
+            searchStage frostedglass " id="form-group">
+                <div class="row">
+                    <div class=" col-sm-8">
+                        <div class="card-body ">
+                            <h3 class="card-title companyheader" id="searchResultTitle">Company Result Name</h3>
+
+                            <!-- Question 1 start -->
+                            <div class="row ">
+                                <div class="col-sm-8 border-top border-bottom  pt-3 whitetype" id="questionFour">
+
+
+                                    <h5>1: Have sales increased continuously for five years?
+                                        <a href="#" data-toggle="tooltip" title="The sales increasing shows a continued stride in growth. This helps show that the company is in fact growing YOY and continues to show improvement."> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text-fill " fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                            </svg></a>
+                                    </h5>
+                                </div>
+                                <div class=" d-flex col-sm-4 " style="width:100%">
+                                    <div class=" col-sm border-top border-bottom  ">
+                                        <div class="h5" style="height:100% " id="boxOne2020">Yes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 1 end -->
+                            <!-- question 2 start -->
+                            <div class="row ">
+                                <div class="col-sm-8 border-top border-bottom  pt-3 whitetype" id="questionFour">
+                                    <h5>2: Have sales doubled in 5-7 years?
+                                        <a href="#" data-toggle="tooltip" title="The sales doubling in the past 5-7 years is another factor of growth. This helps identify the growth rate that the company is seeing. Whether it is growing rapidly (doubling sales) or a steady growth (increasing sales).">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                            </svg></a>
+                                    </h5>
+                                </div>
+                                <div class=" d-flex col-sm-4 " style="width:100%">
+                                    <div class=" col-sm border-top border-bottom  ">
+                                        <div class="h5" style="height:100% " id="boxTwo2020">Yes</div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 2 end -->
+                            <!-- question 3 start -->
+                            <div class="row ">
+                                <div class="col-sm-8 border-top border-bottom  pt-3 whitetype" id="questionFour">
+                                    <h5>3: Any dividend paid during the past five years?
+                                        <a href="#" data-toggle="tooltip" title="Dividend refers to a reward, cash or otherwise, that a company gives to its shareholders. Dividends can be issued in various forms, such as cash payment, stocks or any other form">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                            </svg></a>
+                                    </h5>
+                                </div>
+                                <div class=" d-flex col-sm-4 " style="width:100%">
+                                    <div class=" col-sm border-top border-bottom  ">
+                                        <div class="h5" style="height:100% " id="FiveYearEps2020">Yes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 3 end -->
+                            <!-- question 4 end -->
+                            <div class="row ">
+                                <div class="col-sm-8 border-top border-bottom  pt-3 whitetype" id="questionFour">
+                                    <h5>4: Over the past 3 years, is ROE stable/increasing?
+                                        <a href="#" data-toggle="tooltip" title="The Return On Equity ratio essentially measures the rate of return that the owners of common stock of a company receive on their shareholdings. Return on equity signifies how good the company is in generating returns on the investment it received from its shareholders. Return on Equitr (ROE) is calculated by dividing net income by shareholder's equity.">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                            </svg></a>
+                                    </h5>
+                                </div>
+                                <div class=" d-flex col-sm-4 " style="width:100%">
+                                    <div class=" col-sm border-top border-bottom  ">
+                                        <div class="h5" style="height:100% " id="roe">Yes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 4 end -->
+                            <!-- question 5 end -->
+                            <div class="row ">
+                                <div class="col-sm-8 border-top border-bottom pt-4 whitetype pt-3 " id="questionFive">
+                                    <h5>5: Are current assets TWICE the liabilities?
+                                        <a href="#" data-toggle="tooltip" title="The current ratio is a liquidity ratio that measures a company's ability to pay short-term obligations or those due within one year. It tells investors and analysts how a company can maximize the current assets on its balance sheet to satisfy its current debt and other payables.">
+                                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-chat-right-text-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                                <path fill-rule="evenodd"
+                                                    d="M16 2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h9.586a1 1 0 0 1 .707.293l2.853 2.853a.5.5 0 0 0 .854-.353V2zM3.5 3a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z" />
+                                            </svg></a>
+                                    </h5>
+                                </div>
+                                <div class=" d-flex col-sm-4 " style="width:100%">
+                                    <div class=" col-sm border-top border-bottom  ">
+                                        <div class="h5" style="height:100%" id="liabilities">Yes</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- question 5 end -->
+                        </div>
+                    </div>
+                    <!-- NEWS bucket start-->
+                    <div class="col-sm-4  " style="background-color:transparent">
+                        <div class="pl-4 "><img src="./assets/images/icon-news.svg" alt="news icon" style=" margin-top: 20px; margin-bottom: 20px; height:4.5vh">
+                            <!-- News Results-->
+                            <div id="newsResults" class="row bucket scrollbar bucketResults">
+                            </div>
+                        </div>
+                        <!-- news bucket end-->
+                    </div>
+                </div>
+
+                <div class="navbar navbar-dark bg-dark">
+                    <a class="navbar-brand p-4" href="#">
+                        <img src="./assets/images/icon-crypto.svg" width="200vm" height="auto" alt="" loading="lazy">
+                    </a>
+                    <form class="form-inline">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" id="cryptoSearchterm">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="cryptoBtn">Search</button>
+                    </form>
+                </div>
+                <!-- news crypto start-->
+
+                <div class="betterrow carbon">
+                    <div id="cryptoResults" class="row  Cryptobar  cryptoType " style="font-size:1.5rem!important;font-weight:bold">
+                        <div class="pl-8  border-bottom h1 "></div>
+                    </div>
+
+                </div>
+
+                <!-- news crypto end-->
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+        <!-- ticker start-->
+        <div class="ticker-wrap navbar fixed-bottom navbar-dark bg-dark">
+            <div class="ticker-move">
+                <div class="ticker-item"><span style="color:#E74C3C">Made with love</span> by the "Hustlers Dev Team" at
+                    <span style="color:#E74C3C">Columbia University Coding Bootcamp!</span><span style="color:white">
+                        $$$</span></div>
+                <div class="ticker-item"><span style="color:#E74C3C">The Dev Team</span> "Joe DeFranco - Mastermind "
+                    <span style="color:#E74C3C">|</span> " Carolyn Stolze - GitHub/JQuery Pioneer" <span style="color:#E74C3C">|</span> "Rich Kats - Coder genius that knows more than he lets on" <span style="color:#E74C3C">|</span> "Adriana Soler - Make
+                    it look, legit specialist." </span><span style="color:white"> $$$</span></div>
+                <div class="ticker-item">Let's make it rain Hustler friends!! </span><span style="color:white">
+                        $$$</span></div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    <!-- ticker end-->
+
+    <!-- tooltip script start-->
+
+
+    <script>
+        function showDiv() {
+            document.getElementById('searchStage').style.display = "block";
+            document.getElementById('bodyGreeting').style.display = "none"
+        }
+    </script>
+
+    <script>
+        var count_particles, stats, update;
+        stats = new Stats;
+        stats.setMode(0);
+        stats.domElement.style.position = 'absolute';
+        stats.domElement.style.left = '0px';
+        stats.domElement.style.top = '0px';
+        document.body.appendChild(stats.domElement);
+        count_particles = document.querySelector('.js-count-particles');
+        update = function() {
+            stats.begin();
+            stats.end();
+            if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+            }
+            requestAnimationFrame(update);
+        };
+        requestAnimationFrame(update);
+    </script>
+    <script scr="./assets/js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" -->
+    <!-- integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" -->
+    <!-- crossorigin="anonymous"></script> -->
+
+
+    <script src="./assets/js/particles.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="./assets/js/calculations.js"></script>
+    <!-- news api script link -->
+    <script src="./assets/js/newsScript.js"></script>
+    <!-- crypto price js link -->
+    <script src="./assets/js/crypto.js"></script>
+
+</body>
+
+</html>
